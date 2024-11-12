@@ -1,415 +1,114 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4ebef;
+    padding: 20px;
     color: #333;
-}
-
-.navbar {
-    background-color: #ee3838;
-    padding: 15px 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.nav-center {
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-    color: #0c0c0c;
-    font-family: fantasy;
-    margin: 0;
-}
-
-h3,
-h2,
-h5 {
-    text-align: center;
-    color: #eea237;
-    font-family: 'Arial', sans-serif;
-    margin: 10px 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: auto;
     padding: 20px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    border-radius: 10px;
-}
-
-.fulline {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: flex-start;
-    /* Ensures text areas align at the top */
-}
-
-.text1,
-.textt {
-    flex: 1;
-    /* Ensure both take equal width */
-    /* border: 1px solid #5daaf8; */
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    /* Ensures consistent height behavior */
+    border: 2px solid #ccc; /* Border around the entire container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
-
-.uplod {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-}
-
-.div1 {
-    flex: 1;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(241, 158, 5, 0.1);
-}
-
-.div2 {
-    flex: 1;
-
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(249, 145, 0, 0.1);
-}
-
-#btn1,
-#btn2,
-#btnsave1,
-#btnsave2,
-#btnsave3,
-#btnsave4,
-#btnsave5 {
-    background-color: #ef9733;
-    color: white;
-    border: rgb(0, 0, 0) solid 1px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px 0;
-}
-
-#btn1:hover,
-#btn2:hover,
-#btnsave1:hover,
-#btnsave2:hover,
-#btnsave3:hover,
-#btnsave4:hover,
-#btnsave5:hover {
-    background-color: #e4f00b;
-}
-
-#clrsrc,
-#clrsym,
-#clrop,
-#clrout1,
-#clrout2 {
-    background-color: red;
-    color: white;
-    border: rgb(242, 157, 37) solid 1px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px 0;
-}
-
-#clrsrc:hover,
-#clrsym:hover,
-#clrop:hover,
-#clrout1:hover,
-#clrout2:hover {
-    background-color: #011305;
-}
-
-.fulline {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.text1,
-.textt {
-    flex: 1;
-    /* border: 1px solid #5daaf8; */
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#pass1,
-#op,
-#symtab,
-#output1 {
-    color: #333;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #e3152a;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #e9ecef;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-
-}
-
-#pass1:hover,
-#op:hover {
-    background-color: #d4d4d4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#btnp1,
-#btnp2 {
-    background-color: rgb(195, 42, 22);
-    color: white;
-    border: red(0, 0, 0) solid 1px;
-    border-radius: 5px;
-    padding: 15px 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px 0;
-}
-
-#btnp1:hover,
-#btnp2:hover {
-    background-color: YELLOW;
-    color: rgb(242, 42, 42);
-}
-
-#lvl {
-    color: #333;
-    margin: 20px 0;
-    font-weight: bold;
+/* Header Styles */
+h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
 }
 
-.text1 label,
-.textt label {
-    font-family: fantasy;
-    margin-bottom: 10px;
-    display: block;
+/* Upload Section */
+.upload-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
+.upload-section input[type="file"] {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px solid #ccc; /* Neutral border */
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: green; 
+    color: rgb(241, 242, 245);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #581aca; /* Darker green on hover */
+}
+
+/* Textarea Styles */
 textarea {
     width: 100%;
-    resize: vertical;
-    border: none;
-    outline: none;
+    height: 150px;
+    padding: 10px 0;
+    border: 2px solid #aaa; /* More visible border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: monospace;
 }
-
-textarea:focus {
-    border: 2px solid #5daaf8;
-    box-shadow: 0 0 5px rgba(93, 170, 248, 0.5);
-}
-
-.bndry1 {
-    border: 1px solid #5daaf8;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-
-}
-
-#output2 {
+footer .footer-text{
+    
     width: 100%;
-    height: 100%;
-    /* resize: none; */
-    border: none;
-    outline: none;
-    color: #333;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #e31c30;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #e9ecef;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 4rem;
+    position:relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-@media (max-width: 768px) {
-    .fulline {
+a{
+    text-decoration: none;
+    color: black;
+    text-shadow:  0px px 10px #ccc;
+}
+
+/* Output Section */
+.output-section {
+    margin-bottom: 20px;
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 600px) {
+    .upload-section {
         flex-direction: column;
     }
 
-    .text1,
-    .textt {
-        width: 100%;
-    }
-
-    .div1,
-    .div2 {
-        width: 100%;
-    }
-
-    .uplod {
-        flex-direction: column;
-    }
-
-    .bndry1 {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-
-    #btn1,
-    #btn2,
-    #btnsave1,
-    #btnsave2,
-    #btnsave3,
-    #btnsave4,
-    #btnsave5 {
-        padding: 10px 15px;
-    }
-
-    #clrsrc,
-    #clrsym,
-    #clrop,
-    #clrout1,
-    #clrout2 {
-        padding: 10px 15px;
-    }
-
-    #btnp1,
-    #btnp2 {
-        padding: 10px 30px;
-    }
-}
-
-@media (max-width: 320px) {
-
-    #btn1,
-    #btn2,
-    #btnsave1,
-    #btnsave2,
-    #btnsave3,
-    #btnsave4,
-    #btnsave5 {
-        padding: 10px 10px;
-    }
-
-    #clrsrc,
-    #clrsym,
-    #clrop,
-    #clrout1,
-    #clrout2 {
-        padding: 10px 10px;
-    }
-
-    #btnp1,
-    #btnp2 {
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 768px),
-(max-height: 600px) {
-
-    /* Make sure the container behaves responsively */
-    .container {
-        width: 100%;
-        padding: 0 10px;
-        margin: 0 auto;
-    }
-
-    /* Adjust flex containers to align vertically */
-    .fulline {
-        display: flex;
-        flex-direction: column;
-        /* Stack the elements vertically */
-        width: 100%;
-        align-items: center;
-        /* Center items to avoid floating */
-    }
-
-    /* Text area containers (Assembly Code and OPTAB) */
-    .text1,
-    .textt {
-        width: 100%;
-        /* Full width for text areas */
-        margin-bottom: 15px;
-        /* Space between elements */
-        display: block;
-    }
-
-    /* Ensure text areas are properly aligned */
-    textarea {
-        width: 100%;
-        /* Full width for text areas */
-        height: 120px;
-        /* Adjust height for smaller screens */
-        box-sizing: border-box;
-        /* Include padding and borders within width */
-        padding: 10px;
-        /* Ensure comfortable padding inside text areas */
-        margin: 0 auto;
-        /* Center text areas */
-    }
-
-    /* Buttons container (Upload, Save, Clear) */
-    .uplod {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        /* Ensure buttons stay centered */
-    }
-
-    /* Upload buttons (SRC and OP code) */
-    .div1,
-    .div2 {
-        width: 100%;
+    .upload-section input[type="file"] {
+        margin-right: 0;
         margin-bottom: 10px;
-        /* Add spacing between button sets */
-        display: flex;
-        flex-direction: column;
-        /* Stack buttons vertically */
-        align-items: center;
-        /* Center align buttons */
+    }
+}
+@media (max-width: 600px) {
+    .upload-section {
+        flex-direction: column; /* Stack vertically */
     }
 
-    /* Make buttons full width */
+    .upload-section input[type="file"],
     button {
-        width: 100%;
-        /* Full width buttons */
-        padding: 10px;
-        box-sizing: border-box;
+        width: 100%; /* Full width on mobile */
     }
 
-    /* Heading adjustments for mobile */
-    h1,
-    h3,
-    h5 {
-        font-size: 1.2rem;
-        /* Smaller font size for headings */
-        text-align: center;
-    }
-
-    /* Navbar adjustments for mobile */
-    .navbar {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    /* Footer adjustments for mobile */
-    .footer {
-        text-align: center;
-        padding: 1rem;
+    button {
+        margin-top: 10px; /* Space between button and input */
     }
 }
